@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Decision Making</title>
+  </head>
+  <body>
+    <h1 align="center">
+      JavaScript Questions
+      <br />
+      Decision Making
+    </h1>
+    <div class="box">
+      <h2>1. Calculator</h2>
+      <pre>
+    const Calculator = (A, B, C) => 
+    {
+        switch(A){
+        case '+':return(B+C);
+        case '-':return(B-C);
+        case '*':return(B*C);
+        case '/':return(B/C);
+        }
+    };</pre
+      >
+    </div>
+    <div class="box">
+      <h2>2. Check whether the condition is fulfilled or not?</h2>
+      <pre>
+    const Check_divisibility = (N) => {
+        if((N%9===0) && (N%6===0)){
+        return"Divisible by both";
+        }
+        else{
+        return"Not Divisible by both";
+        }
+    };</pre
+      >
+    </div>
+    <div class="box">
+      <h2>3. Eligible Voter</h2>
+      <pre>
+    const isEligible = (a) => {
+        if(a>18){
+        return "Eligible for Voting";
+        }
+        else{
+        return "Not Eligible for Voting";
+        }
+    };</pre
+      >
+    </div>
+    <div class="box">
+      <h2>4. Find Relation</h2>
+      <pre>
+    const findRelation = (x,y) => {
+        if(x<y){
+          return (x+" is smaller than "+y);
+        }
+        else if(x>y){
+          return (x+" is greater than "+y);
+        }
+        else{
+          return (x+" is equal to "+y);
+        }
+    };</pre
+      >
+    </div>
+    <div class="box">
+      <h2>5. Find Grades</h2>
+      <pre>
+    const findGrades = (a) => {
+        if(a<=10){
+          return "E";
+        }
+        else if(a>=11 && a<=20){
+          return "D";
+        }
+        else if(a>=21 && a<=30){
+          return "C";
+        }
+        else if(a>=31 && a<=40){
+          return "B";
+        }
+        else if(a>=41 && a<=50){
+          return "A";
+        }
+    };</pre
+      >
+    </div>
+    <div class="box">
+      <h2>6. Get Value</h2>
+      <pre>
+    const getValue = (a) => {
+      if(a=='P' || a=='p'){
+        return "PrepBytes";
+      }
+      else if(a=='Z' || a=='z'){
+        return "Zenith";
+      }
+      else if(a=='E' || a=='e'){
+        return "Expert Coder";
+      }
+      else if(a=='D' || a=='d'){
+        return "Data Structure";
+      }
+      else{
+        return"Null";
+      }
+    };</pre
+      >
+    </div>
+    <div class="box">
+      <h2>7. Find the maximum out of three numbers.</h2>
+      <pre>
+    const Max_out_of_three = (A,B,C) => {
+        if(A>B && A>C){
+          return A;
+        }
+        else if(B>C && B>A){
+          return B;
+        }
+        else if(C>A && C>B){
+          return C;
+        }
+        else{
+          return -1;
+        }
+
+    };</pre
+      >
+    </div>
+        <div class="box">
+      <h2>8. Second Smallest.</h2>
+      <pre>
+    const findSndSmallest = (x,y,z) => {
+        if(x>y && x>z){
+          if(y>z){
+            return y;
+          }
+          else{
+            return z;
+          }
+        }
+        else if(y>x && y>z){
+          if(x>z){
+            return x;
+          }
+          else{
+            return z;
+          }
+        }
+        else if(z>y && z>x){
+          if(y>x){
+            return y;
+          }
+          else{
+            return x;
+          }
+        }
+    };<pre
+      >
+    </div>
+    <div class="box">
+      <h2>9. Check whether the triangle is Acute or Obtuse.</h2>
+      <pre>
+    const Triangle_Check = (A,B,C) => {
+        if(A<=90 && B<=90 && C<=90){
+          return "acute";
+        }
+        else if(A>90 || B>90 || C>90){
+          return "obtuse";
+        }
+        else{
+          return "obtuse";
+        }
+    };<pre
+      >
+    </div>
+  </body>
+</html>
